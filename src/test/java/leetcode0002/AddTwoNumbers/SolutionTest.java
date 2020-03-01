@@ -9,9 +9,9 @@ class SolutionTest {
 
     @Test
     void addTwoNumbers() {
-        ListNode l1 = ListNode.GenerateListNode(new int[]{2, 4, 3});
-        ListNode l2 = ListNode.GenerateListNode(new int[]{5, 6, 4});
-        ListNode output = ListNode.GenerateListNode(new int[]{7, 0, 8});
+        ListNode l1 = ListNode.Generate(new int[]{2, 4, 3});
+        ListNode l2 = ListNode.Generate(new int[]{5, 6, 4});
+        ListNode output = ListNode.Generate(new int[]{7, 0, 8});
         Solution solution = new Solution();
         ListNode ret = solution.addTwoNumbers(l1, l2);
         assertArrayEquals(output.toArray(), ret.toArray());
