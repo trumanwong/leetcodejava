@@ -10,8 +10,8 @@ class SolutionTest {
     @Test
     void swapPairs() {
         Solution solution = new Solution();
-        ListNode node = ListNode.GenerateListNode(new int[]{1, 2, 3, 4});
+        ListNode node = ListNode.Generate(new int[]{1, 2, 3, 4});
         node = solution.swapPairs(node);
-        assertArrayEquals(ListNode.GenerateListNode(new int[]{2, 1, 4, 3}).toArray(), node.toArray());
+        assertArrayEquals(ListNode.Generate(new int[]{2, 1, 4, 3}).toArray(), node.toArray());
     }
 }
